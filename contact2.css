@@ -1,0 +1,91 @@
+  * {
+    box-sizing: border-box;
+  }
+
+.contact-block {
+    background: #C9ACA6;
+    border: none;
+}
+
+.contact-container {
+   display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+fieldset {
+border: none;
+}
+
+.formsection {
+    font-weight: bold;
+    text-align: left;
+}
+
+.form {
+    background-color: #EAE0D7;
+    border-radius: 5%;
+    padding: 10px;
+    border: 1px solid #776975;
+} 
+
+.row {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+input[type=email] {
+   width: 100%;
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+  }
+
+.radio_left {
+    vertical-align: baseline;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+label {
+    display: inline-block;
+    padding: 5px 5px 5px 0;
+    text-align: right;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns (clearfix hack) */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Media query to make the label and input fields stack on top of each other if screen is <600px */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
