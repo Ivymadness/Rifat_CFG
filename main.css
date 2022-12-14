@@ -210,3 +210,21 @@ footer > div {
 .footer-right {
     float: right;
 }
+
+.responsive {
+    width: 100%;
+    max-width: 300px;
+}
+
+.responsive2 {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Media query to make the images smaller if screen is <600px */
+@media screen and (max-width: 600px) {
+    .responsive, .responsive2 {
+    max-width: 50%;
+    max-height: 50%;
+    }
+  } 
